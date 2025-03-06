@@ -16,3 +16,127 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+.main-link {
+  margin: 0 auto;
+  font-size: 25px;
+  padding: 30px;
+}
+.main-link:hover,
+.main-link:focus {
+  color: rgb(0, 213, 255);
+}
+/* gallery styles */
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 24px;
+  padding: 24px;
+  max-width: 1128px;
+  margin: auto auto;
+}
+
+.gallery-item {
+  width: calc((1128px - 24px * 2) / 3);
+}
+.gallery-link {
+  cursor: auto;
+}
+.gallery-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.sl-overlay {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+/* form styles */
+.container {
+  width: 408px;
+  height: 296px;
+  margin: 0 auto;
+}
+.feedback-form {
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  height: 256px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: #fff;
+}
+.input-label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  font-family: 'Montserrat', sans-serif;
+  transition: border 500ms linear;
+}
+.input-field {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  outline: transparent;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding-left: 16px;
+  transition: border 500ms linear;
+}
+.input-field:hover,
+.input-field:focus {
+  border: 1px solid #000;
+}
+.textarea {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  outline: transparent;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 80px;
+  padding-left: 16px;
+  transition: border 500ms linear;
+}
+.textarea:hover,
+.textarea:focus {
+  border: 1px solid #000;
+}
+.submit-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  background-color: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin-top: 24px;
+  cursor: pointer;
+  transition: background-color 500ms linear;
+}
+.submit-btn:hover,
+.submit-btn:focus {
+  background-color: #6c8cff;
+}
