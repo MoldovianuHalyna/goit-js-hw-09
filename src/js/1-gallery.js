@@ -89,7 +89,4 @@ const lightbox = new SimpleLightbox('.gallery a', {
   captions: true,
   captionDelay: 250,
   captionsData: 'alt',
-  enableKeyboard: true,
-  showCounter: true,
-  overlayOpacity: 0.85,
 });

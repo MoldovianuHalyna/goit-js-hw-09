@@ -66,15 +66,18 @@ const inputEventHandler = function ({ target: formField }) {
 };
 // submit
 const formSubmit = function (event) {
+  event.preventDefault();
   if (!formData.email || !formData.message) {
     alert('Fill please all fields');
     return;
   }
-  event.preventDefault();
 
   localStorage.removeItem(LOCAL_STORAGE_KEY);
   event.currentTarget.reset();
+
   console.log(formData);
+  formData.email = '';
+  formData.message = '';
 };
 refs.form.addEventListener('input', inputEventHandler);
 refs.form.addEventListener('submit', formSubmit);
